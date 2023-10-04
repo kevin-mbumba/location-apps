@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Article;
+use App\Models\User;
 use App\Models\Client;
+use App\Models\Article;
 use App\Models\TypeArticle;
 use GuzzleHttp\Promise\Create;
 use Illuminate\Database\Seeder;
@@ -27,8 +28,9 @@ class DatabaseSeeder extends Seeder
             DureeLocationSeeder::class
         ]);
 
-        Article::factory(100)->create();
-        Client::factory(100)->create();
+        Article::factory(10)->create();
+        Client::factory(10)->create();
+        User::factory(10)->create();
         
     }
 }
